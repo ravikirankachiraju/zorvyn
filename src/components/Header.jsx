@@ -1,5 +1,5 @@
 import { useDashboard } from '../context/DashboardContext';
-import { Moon, Sun } from 'lucide-react';
+// import { Moon, Sun } from 'lucide-react';
 
 export const Header = () => {
   const { role, setRole, darkMode, setDarkMode } = useDashboard();
@@ -37,12 +37,12 @@ export const Header = () => {
         </div>
 
         {/*Dark Mode Toggle*/}
-        <button 
+        {/* <button 
           onClick={() => setDarkMode(!darkMode)}
           className="p-2.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-yellow-400 transition-all hover:scale-105 active:scale-95 shadow-sm"
         >
           {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-        </button>
+        </button> */}
         
       </div>
     </header>
