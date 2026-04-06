@@ -1,16 +1,133 @@
-# React + Vite
+# 💰 Zorvyn Finance Dashboard Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance financial management dashboard designed to provide users with deep insights into their spending habits.
 
-Currently, two official plugins are available:
+It features real-time data filtering, interactive analytics, and role-based access control for a seamless financial tracking experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Frontend Framework: React (Vite)
+- Styling: Tailwind CSS v4
+- Icons: Lucide React
+- Charts: Recharts (Area & Pie Charts)
+- Data Export: SheetJS (XLSX)
+- State Management: React Context API
+- Persistence: Browser LocalStorage
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Key Features
+
+### 🧠 Unified Dashboard Engine
+
+- Real-time calculation of:
+  - Net Balance
+  - Total Income
+  - Total Expenses
+
+- Dynamic insights based on highest expenditure category
+
+- Efficiency score:
+  - "Budget Burned" percentage tracker
+
+---
+
+### 💳 Advanced Transaction Management
+
+- Multi-level sorting:
+  - Newest First
+  - High to Low
+  - Low to High
+  - Deterministic tie-breaking using unique IDs
+
+- Live filtering:
+  - Search across descriptions and categories
+
+- Transaction entry:
+  - Modal-based form
+  - Automatic date stamping
+
+---
+
+### 🔐 Role-Based Access Control (RBAC)
+
+- Admin Mode:
+  - Add transactions
+  - Export reports to Excel
+
+- Viewer Mode:
+  - Read-only access
+  - Restricted Add and Export functionality
+
+---
+
+### 🎨 UI/UX Features
+
+- Single Page Navigation:
+  - Dashboard
+  - Accounts
+  - Reports
+
+- Smooth transitions:
+  - CSS animations (Framer Motion inspired)
+
+---
+
+### 💾 Data Persistence (LocalStorage)
+
+- Automatic synchronization of transactions
+
+- State recovery using `zorvyn_data`
+
+- Offline-first experience with instant updates
+
+---
+
+### 📊 Interactive Data Visualizations
+
+- Balance Flow (Area Chart):
+  - 7-day balance trend
+  - Smooth monotone curves
+
+- Spending Split (Pie Chart):
+  - Category-wise expense breakdown
+  - Custom colors and tooltips
+
+---
+
+## ⚙️ Setup & Installation
+
+### 📌 Prerequisites
+
+- Node.js (v18 or higher)
+- npm
+
+---
+
+### 📥 Clone the Repository
+
+```bash
+git clone https://github.com/ravikirankachiraju/zorvyn.git
+cd zorvyn
+```
+
+---
+
+### 📦 Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+### ▶️ Run Development Server
+
+```bash
+npm run dev
+```
+```
+application will be available at http://localhost:5173
+```
